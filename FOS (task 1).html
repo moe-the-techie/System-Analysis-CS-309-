@@ -57,9 +57,6 @@ body {
     color: #0056b3; /* Cairo University blue on hover */
 }
 
-
-
-
 /* Hero Section */
 .hero {
     background-size: cover;
@@ -69,7 +66,6 @@ body {
     color: #fff;
     position: relative; /* Needed for overlay */
 }
-
 
 .hero img {
     width: 100%;
@@ -83,7 +79,11 @@ body {
 }
 
 .hero-content {
-
+    background-image: url('https://cu.edu.eg/ar/news/images/l6R2E8j7GpHR4Q1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
     position: relative;  /* Ensure content is on top of image */
     z-index: 1;
 }
@@ -92,11 +92,11 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
-
 
 /* Button Styles */
 .cta-button, .learn-more {
@@ -112,7 +112,6 @@ body {
 .cta-button:hover, .learn-more:hover{
     background-color: #003d80; /* Darker blue on hover */
 }
-
 
 /* Featured Programs */
 .featured-programs {
@@ -135,11 +134,11 @@ body {
     border-radius: 5px;
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
+
 .card:hover {
     transform: translateY(-5px);  /* Lift up on hover */
 
 }
-
 
 .card i {
     font-size: 3rem;
@@ -151,14 +150,17 @@ body {
     margin-bottom: 0.5rem;
 }
 
-
-
 /* About Us */
 .about-us {
     background-color: #f0f0f0;
     padding: 50px 0;
 }
 
+.about-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 
 .about-content {
     display: flex;
@@ -173,7 +175,6 @@ body {
     border-radius: 5px;
 }
 
-
 /* Footer */
 
 footer {
@@ -182,7 +183,6 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
 
 .social-icons {
     margin-top: 10px;
@@ -195,12 +195,10 @@ footer {
     transition: color 0.3s ease;
 }
 
-
 .social-icons a:hover {
     color: #0056b3; /* Cairo University blue */
 
 }
-
 
 /* Responsive Design (Example - adjust as needed) */
 @media (max-width: 768px) {
@@ -229,7 +227,6 @@ footer {
     transition: 0.4s ease;
   }
 
-
 .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -242,7 +239,6 @@ footer {
 
 }
 
-
     .program-cards {
         flex-direction: column; /* Stack cards vertically */
         align-items: center;
@@ -252,7 +248,6 @@ footer {
         flex-direction: column;  /* Stack image and text vertically */
 
     }
-
 }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -266,13 +261,12 @@ footer {
 
     <header>
         <nav class="navbar">
-            <!-- TODO: Add image to each instance of the logo -->
-          <div class="cu-logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cairo_University_Logo.svg/2560px-Cairo_University_Logo.svg.png" alt="Cairo University Logo" height="80"> </div>  
+          <div class="cu-logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Cairo_university.jpg?20130822005257" alt="Cairo University Logo" height="80px"> </div>
           <div class="nav-links">
                 <ul>
-                    <!-- TODO: Add a students nav element -->
                     <li><a href="#">About</a></li>
                     <li><a href="#">Departments</a></li>
+                    <li><a href="#">Students</a></li>
                     <li><a href="#">Research</a></li>
                     <li><a href="#">Admissions</a></li>
                     <li><a href="#">News & Events</a></li>
@@ -288,13 +282,12 @@ footer {
 
         <div class="hero">
             <div class="hero-content">
-                <!-- TODO: Add image to banner -->
                 <h1>Faculty of Science <br> Cairo University</h1>
                 <p>Pioneering Scientific Discovery and Education</p>
                 <a href="#" class="cta-button">Explore More</a>
             </div>
             <img src="https://www.cu.edu.eg/wp-content/uploads/2018/10/science-faculty1.jpg" alt="Faculty of Science Banner"> 
-            </div>
+        </div>
     </header>
 
 
@@ -326,22 +319,44 @@ footer {
                 <p>Understand the laws of nature and the fundamental forces of the universe.</p>
                 <a href="#" class="learn-more">Learn More</a>
             </div>
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Computer Science</h3>
+                <p>Tap into the digital world, solve problems, and modernize your view of civilization.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-gem"></i>
+                <h3>Geology</h3>
+                <p>Emmerse yourself into the Earth's crust and discover astonishing materials.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-bug"></i>
+                <h3>Entomology</h3>
+                <p>Study the minaiture world of bug and Entomology</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-fish"></i>
+                <h3>Zoology</h3>
+                <p>Get ahead in the field of Zoology and wildlife preservation.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
 
               </div>  </section>
 
     <section class="about-us">
-        <!-- TODO: Adjust the placement of this -->
         <h2>About the Faculty</h2>
         <div class="about-content">
-            <img src="https://media-exp1.licdn.com/dms/image/C5103AQH54-K-3xU5-A/profile-displayphoto-shrink_800_800/0/1516594165404?e=2147483647&v=beta&t=i95b_Z4y7hS97g0Zv7jZYp0kYd5TqZ-6uB6e6T3e9Y" alt="Cairo University Campus" >
-            <p>The Faculty of Science at Cairo University is a leading institution dedicated to advancing scientific knowledge and providing world-class education. </p>
+            <img src="https://cu.edu.eg/old/ar/news/images/Cairo_University_550.jpg" alt="Cairo University Campus" >
+            <p>The Faculty of Science at Cairo University is a leading institution dedicated to advancing scientific knowledge and providing world-class education.</p>
 
         </div>
     </section>
 
 
     <footer>
-        <!-- TODO: Add image here -->
         <p>© 2024 Faculty of Science - Cairo University. All rights reserved.</p>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
