@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const rows = table.getElementsByTagName("tr");
     
     const data = [];
-    const headers = [];
     // get headers from first table row
 
     for (let i = 1; i < rows.length; i++) { // start from 1 to skip header row

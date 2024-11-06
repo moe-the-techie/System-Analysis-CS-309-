@@ -58,7 +58,7 @@ console.log(arr3.find(e => e == 5))
 
 console.log(arr3.map(e => 5))
 
-// Reduce here takes two parameters acc -> accumulat and cur -> current meaning that whatever's operation is done on the paremteres its output is stored in acc and the
+// Reduce here takes two parameters acc -> accumulate and cur -> current meaning that whatever's operation is done on the paremteres its output is stored in acc and the
 // iteration takes place on cur only. (TL;DR: cur changes and the output is stored into acc).
 console.log(arr3.reduce((acc, cur) => acc + cur))
 
